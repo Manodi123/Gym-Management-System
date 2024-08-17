@@ -1,0 +1,778 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --background-color: #18283b;
+    --background-color-2: #fff;
+    --text-color: #ffffff;
+    --title-color: #FF2424;
+}
+
+.header-background{
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--background-color);
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.heder{
+    width: auto;
+    background-color: var(--background-color-2);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: 0 32px;
+    border-radius: 38px;
+}
+
+
+.nav{
+    display: flex;
+    padding: 1% 2.7%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 12px;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 17px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--title-color);
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.main-motivation{
+    display: flex;
+    height: 220px;
+    width: auto;
+    padding: 12px;
+    margin: 28px;
+}
+
+.main-motivation img{
+    width: auto;
+    height: 70vh;
+    flex: 1;
+    text-align: right;
+    display: inline-block;
+    position: relative;
+}
+
+.main-motivation h1{
+    color: var(--background-color-2);
+    margin: 180px 58px;
+    font-size: 64px;
+}
+
+.gradient{
+    background: linear-gradient(to right, #EE24FF, #181699);
+    color: transparent;
+    background-clip: text;
+    display: inline;
+}
+
+.About-us{
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+.heading{
+    color: var(--background-color-2);
+    text-align: center;
+    font-size: 35px;
+}
+
+.aboutcont{
+    margin: 35px 10%;
+    font-size: 28px;
+}
+
+.aboutcontent2{
+    margin: 35px 10% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutcontent2 p{
+    color: var(--background-color-2);
+    width: 570px;
+    margin-top: 27px;
+    margin-left: 90px;
+    margin-right: 90px;
+    font-size: 18px;
+}
+
+.aboutcontent2 img{
+    width: 570px;
+    height: auto;
+    margin-left: 36px;
+}
+
+.Subscription{
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+.subscription-card{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.card-1, .card-2, .card-3{
+    width: 280px;
+    height: 520px;
+    background: linear-gradient( #E772FB, #748DD3 ,#3A6CC8);
+    border-radius: 23px;
+}
+
+.cards img{
+    width: 205px;
+    height: auto;
+    margin: 30px;
+}
+
+.card-cont h1{
+    color: var(--background-color-2);
+    text-align: center;
+}
+
+.card-cont p{
+    color: var(--background-color-2);
+    margin: 8px;
+    text-align: center;
+}
+
+.card-cont ul{
+    margin: 8px 12px;
+    padding: 4px 12px;
+}
+
+.card-cont ul li{
+    padding: 2px;
+    color: var(--background-color-2);
+}
+
+.price{
+    font-size: 24px;
+}
+
+.cards{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    margin-top: 30px; /* Adjust margin as needed */
+}
+
+.btn{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--background-color-2);
+    padding: 12px 34px;
+    border: 1px solid #fff;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 28px;
+}
+
+
+.btn:hover{
+    border: 0px;
+    background: linear-gradient(to right, #E772FB, #748DD3 ,#3A6CC8);
+    transition: 1s;
+}
+
+/*Services*/
+
+.services{
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+.container{
+    width: 100%;
+    height: auto;
+}
+
+.container h1{
+    text-align: center;
+    padding: 3%;
+    padding-bottom: 12px;
+}
+
+.container a{
+    text-decoration: none;
+    color: var(--background-color-2);
+    font-size: 35px;
+}
+
+.container p{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 4px 10%;
+    color: var(--background-color-2);
+    font-size: 18px;
+}
+
+.servicesbox{
+    width: 100%;
+    height: auto;
+    margin-top: 22px;
+}
+
+.servicesbox .servicecato1{
+    width: 100%;
+    height: auto;
+    padding: 12px 10% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicesbox .servicecato1 img{
+    width: 250px;
+    height: auto;
+}
+
+.servicesbox .servicecato2{
+    width: 100%;
+    height: auto;
+    padding: 22px 25% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicesbox .servicecato2 img{
+    width: 250px;
+    height: auto;
+}
+
+/*Conatact us*/
+
+.contactus{
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+.Contact{
+    width: 100%;
+    height: auto;
+}
+
+.Contact h1{
+    padding: 3% 3% 0;
+}
+
+.Contactcont{
+    margin: 0 8% 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Contactcont img{
+    width: 570px;
+    height: auto;
+}
+
+.Contactcont .textbox{
+    margin: 3%;
+    padding: 3% 0;
+}
+
+
+.Contactcont .textbox p{
+    padding: 3% 0;
+    color: var(--background-color-2);
+    font-size: 18px;
+}
+
+.Contactcont .textbox input, textarea{
+    padding: 2% 4%;
+    border-radius: 22px;
+}
+
+.Contactcont .btn-container{
+    display: inline;
+    justify-content: center; /* Centers the button horizontally */
+    margin-top: 40px; /* Adjust margin as needed */
+}
+
+.Contactcont .btn{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--background-color-2);
+    padding: 8px 28px;
+    border: 1px solid #fff;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 28px;
+}
+
+.Contactcont .btn:hover{
+    border: 0px;
+    background: var(--title-color);
+    transition: 1s;
+}
+
+.success-msg {
+    color: #270;
+    background-color: #DFF2BF;
+  }
+  .error-msg {
+    color: #D8000C;
+    background-color: #FFBABA;
+  }
+
+footer{
+    background-color: var(--background-color);
+    width: 100%;
+    height: auto;
+}
+
+.footercont{
+    padding: 0 8% 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footercont h1,p,li {
+    color: var(--background-color-2);
+}
+
+.section1 {
+    border-right: 2px solid rgb(255, 255, 255);
+    padding: 0 10%;
+}
+
+.section2{
+    border-right: 2px solid rgb(255, 255, 255);
+    padding: 5% 10%;
+}
+
+.section3{
+    padding: 0 10%;
+}
+
+.section1 p{
+    padding-bottom: 1px;
+}
+
+.section2  ul li{
+    list-style: none;
+    padding-bottom: 2px;
+}
+
+.section2 ul li a{
+    text-decoration: none;
+    color: var(--background-color-2);
+}
+
+.section3 a{
+    text-decoration: none;
+    color: var(--background-color-2);
+    transition: 0.3s;
+}
+
+.section3 ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+}
+
+.section3 a:hover{
+    color: var(--title-color);
+}
+
+.section3 ul li{
+    list-style: none;
+}
+
+.gotop{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background: var(--title-color);
+    bottom: 40px;
+    right: 50px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsive dsign*/
+
+.nav span{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .heder{
+        text-align: center;
+        margin: 0 32px;
+    }
+   .main-motivation{
+    display: inline;
+    
+   }
+   .main-motivation h1{
+    margin: 20%;
+    font-size: 40px;
+    text-align: center;
+   }
+
+   .main-motivation img{
+    margin: 0 25%;
+    width: 250px;
+    height: auto;
+   }
+
+   .nav-links ul li {
+    display: block;
+   }
+
+   .nav-links ul li .about-usnav{
+    color: #29eae4;
+   }
+
+   .nav-links ul li a{
+    color: var(--background-color-2);
+   }
+
+   .nav-links {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    height: 40vh;
+    width: 200px;
+    top: 0;
+    right: -300px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+    display: hide;
+   }
+
+   .nav span{
+    display: block;
+    color: var(--background-color);
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+   }
+
+   .nav-links ul{
+    padding: 20px;
+   }
+
+   /*about us media link*/
+
+   .heading{
+    padding: 10%;
+   }
+
+   .heading h1{
+    font-size: 1.3em;
+   }
+
+    .aboutcont {
+    margin: 0 20%;
+    text-align: center;
+    font-size: 1.27em;
+   }
+
+   .aboutcontent2{
+
+    display: inline;
+   }
+
+   .aboutcontent2 p{
+    width: 80%;
+    height: auto;
+    margin: 8px 10%;
+    padding: 10%;
+    text-align: justify;
+   }
+
+   .aboutcontent2 img{
+    width: 60%;
+    height: auto;
+    margin: 12px 18%;
+   
+   }
+
+   /*Subscription plan*/
+
+   .subscription-card{
+    width: 80%;
+    height: auto;
+    margin: 0 15%;
+   }
+
+   .cards {
+    display: inline;
+    justify-content: space-between;
+   }
+
+   .card-1,.card-2,.card-3{
+    width: 54%;
+    height: auto;
+    margin: 9% 18%;
+   }
+
+   .cards img{
+    width: 120px;
+    height: auto;
+    margin: 10% 20%;
+   }
+
+   .card-cont{
+    margin: 10% 0;
+   }
+
+   .card-cont h1, p{
+    font-size: 1.1e,;
+   }
+
+   .btn-container{
+    margin: auto;
+   }
+
+   /*Services*/
+
+   .container p{
+    font-size: 18px;
+   }
+
+   .servicesbox .servicecato1 {
+    display: inline;
+    justify-content: space-between;
+    text-align: center;
+    
+   }
+
+   .servicesbox .servicecato1 img {
+    padding: 22px 10%;
+   }
+
+   .servicesbox .servicecato1 p{
+    font-size: 14px;
+   }
+   
+   .servicesbox .servicecato2{
+    display: inline;
+    justify-content: space-between;
+    text-align: center;
+    padding: 22px 10%;
+   }
+
+   .servicesbox .servicecato2 img{
+    padding: 22px 10% ;
+   }
+
+   .servicesbox .servicecato2 p{
+    font-size: 14px;
+   }
+
+   /*Contact us*/
+
+   .Contactcont{
+    display: inline;
+    text-align: center;
+   }
+
+   .Contactcont img{
+    width: 250px;
+    height: auto;
+    margin: 0 20%;
+   }
+
+   .Contact .heading{
+    padding: 5%;
+   }
+
+   /*Footer*/
+
+   .footercont{
+    display: inline;
+   }
+
+}

@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 13s ease infinite;
+    -moz-animation: AnimationName 13s ease infinite;
+    -o-animation: AnimationName 13s ease infinite;
+    animation: AnimationName 13s ease infinite;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
+.content {
+    display: flex;
+}
+
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+    width: calc(100% - 260px);
+}
+
+.todo-app {
+    width: 80%;
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-app h2 {
+    color: #000000;
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#registrationNumber {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#requestedTasks, #todoList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#requestedTasks li, #todoList li {
+    background-color: #ecf0f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}

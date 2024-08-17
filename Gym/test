@@ -1,0 +1,7 @@
+          <div class="nav-button"><i class="fas fa-tachometer-alt"></i></i><a href="AdminDashbaord.php"><span>Dashboard</span></a></div>
+          <div class="nav-button"><i class="fa fa-users"></i><a href="Memeber.php"><span>Member List</span></a></div>
+          <div class="nav-button"><i class="fa fa-user-plus"></i><a href="Memberentry.php"><span>Member Entry</span></a></div>
+          <div class="nav-button"><i class="fa fa-users-cog"></i><a href="Trainerlist.php"><span>Trainer List</span></a></div>
+          <div class="nav-button"><i class="fa fa-user-tie"></i><a href="Trainerentry.php"><span>Trainer Entry</span></a></div>
+          <div class="nav-button"><i class="fas fa-clipboard-check"></i><a href="Attendance.php"><span>Attendance</span></a></div>
+          <div class="nav-button"><i class="fa fa-comment-dots"></i><a href="Feedback.php"><span>Feedback</span></a></div>

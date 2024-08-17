@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 13s ease infinite;
+    -moz-animation: AnimationName 13s ease infinite;
+    -o-animation: AnimationName 13s ease infinite;
+    animation: AnimationName 13s ease infinite;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+h1{
+    text-align: center;
+    color: #000000;
+}
+
+h2,label {
+    color: #000000;
+}
+
+.request-list, .todo-form {
+    margin: 20px 0;
+}
+
+.request-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.request-list li {
+    padding: 10px;
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.request-list button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.request-list button:hover {
+    background-color: #007BFF;
+}
+
+.todo-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-form label {
+    margin-bottom: 5px;
+}
+
+.todo-form input, .todo-form select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.todo-form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todo-form button:hover {
+    background-color: #155aa4;
+}

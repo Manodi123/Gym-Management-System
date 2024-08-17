@@ -1,0 +1,59 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ecf0f1;
+}
+
+.gce {
+  padding: 40px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin-left: 280px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container h1 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card i {
+  color: #f39c12;
+}
+
+.card h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}

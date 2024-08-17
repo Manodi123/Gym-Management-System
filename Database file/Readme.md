@@ -1,0 +1,1 @@
+This is the gym management sytem database file. make sure it's name " gym_management_db ". 

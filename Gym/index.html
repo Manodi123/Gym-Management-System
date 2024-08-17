@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Protest+Revolution&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <title>Gym management system</title>
+    <link rel="shortcut icon" type="x-icon" href="Images/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header-background" id="home">
+        <br>
+        <section class="heder">
+            <nav class="nav">
+                <img src="Images/logo.png" alt="user-png">
+                <div class="nav-links" id="navLinks">
+                    <span class="material-symbols-outlined" onclick="hidemenu()">
+                        close
+                    </span>
+                    <ul>
+                        <li><a href="#About-us" class="about-usnav">About-us</a></li>
+                        <li><a href="#Subscription">Subscription</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contactus">Contact</a></li>
+                        <li><a href="User/Signup/login.html">Gym</a></li>
+                    </ul>
+                </div>
+                <span class="material-symbols-outlined" onclick="showmenu()">
+                    menu
+                </span>
+            </nav>
+        </section>
+        <div class="main-motivation">
+            <h1><span class="gradient">You</span> pursue goals. <br> <span class="gradient">We</span> will take the risk.</h1>
+            <img src="Images/heder.png" alt="main-photo">
+        </div>
+    </div>
+    <!--About us-->
+
+    <section class="About-us" id="About-us">
+        <div class="heading">
+            <h1>About us</h1>
+        </div>
+        <div class="aboutcont">
+            <h1 class="gradient">Welcome to the Heartbeat of Fitness <br> Excellence.!</h1>
+        </div>
+        <div class="aboutcontent2">
+            <p>Celebrate your fitness journey with us at GYM. Founded on a passion for wellness, we're dedicated to empowering individuals of all levels to achieve their goals. Our experienced team combines cutting-edge technology with personalized support, offering tailored workout plans, expert guidance, and a welcoming community atmosphere. More than just a gym, we're a destination for growth, camaraderie, and transformation. Join us and discover the joy of fitness in an environment where everyone is supported, 
+            inspired, and celebrated. Together, we'll redefine what's possible and unlock your full potential. Welcome to the GYM family.</p>
+            <img src="Images/SVG/undraw_team_work_k-80-m.svg" alt="team-png">
+        </div>
+    </section>
+    <a class="gotop" href="#home"><i class="fa-solid fa-arrow-up"></i></i></a>
+    <!--Subscription plan-->
+
+    <section>
+        <div class="Subscription" id="Subscription">
+            <h1 class="heading">Subscription Plan</h1>
+            <div class="subscription-card">
+                <div class="cards">
+                    <div class="card-1">
+                        <img src="Images/SVG/undraw_stability_ball_b-4-ia.svg" alt="card1images">
+                        <div class="card-cont">
+                            <h1>Basic</h1>
+                            <p>Provides access to basic functionalities to kickstart their fitness journey.</p>
+                            <div class="list">
+                                <ul>
+                                    <li>Access to Gym Facilities</li>
+                                    <li>Basic workout plans.</li>
+                                    <li>Progress Tracking.</li>
+                                    <li>Limited Support</li>
+                                </ul>
+                            </div>
+                            <p class="price" id="subs-price">Rs. 2500/-</p>
+                            <p>Per user <br> Per month</p>
+                        </div>
+                    </div>
+                        <div class="card-2">
+                            <img src="Images/SVG/undraw_personal_training_0dqn.svg" alt="card1images">
+                            <div class="card-cont">
+                                <h1>Plus</h1>
+                                <p>Offers more flexibility and customization options compared to the basic plan.</p>
+                                <div class="list">
+                                    <ul>
+                                        <li>All Basic Plan Features.</li>
+                                        <li>Personalized Workout Plans.</li>
+                                        <li>Advanced Progress Tracking.</li>
+                                        <li>Nutrition Guidance.</li>
+                                    </ul>
+                                </div>
+                                <p class="price" id="subs-price">Rs. 4500/-</p>
+                                <p>Per user <br> Per month</p>
+                            </div>
+                        </div>
+                            <div class="card-3">
+                                <img src="Images/SVG/undraw_indoor_bike_pwa4.svg" alt="card1images">
+                                <div class="card-cont">
+                                    <h1>Pro</h1>
+                                    <p>Offers advanced features and premium services for maximizing performance and results.</p>
+                                    <div class="list">
+                                        <ul>
+                                            <li>All Plus Plan Features.</li>
+                                            <li>Personal Training Sessions.</li>
+                                            <li>Unlimited Classes.</li>
+                                            <li>Exclusive Benefits.</li>
+                                        </ul>
+                                    </div>
+                                    <p class="price" id="subs-price">Rs. 7500/-</p>
+                                    <p>Per user <br> Per month</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <a href="#contactus" class="btn">Contact us</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--services-->
+
+    <section class="services" id="services">
+        <div class="container">
+            <h1><a href="#">Services</a></h1>
+            <p class="firstpara">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum nam ut od
+                io expedita, aliquam eos debitis perferendis repudiandae ipsa minus quasi consequatur,
+                veritatis molestiae totam laudantium aperiam ullam saepe corporis?
+            </p>
+            <div class="servicesbox">
+                <div class="servicecato1">
+                    <div class="srvice1">
+                        <img src="Images/SVG/undraw_activity_tracker_re_2lvv.svg" alt="image.active man">
+                        <p>Nutrition guidance</p>
+                    </div>
+                    <div class="srvice2">
+                        <img src="Images/SVG/undraw_personal_training_0dqn.svg" alt="image.active man">
+                        <p>personal training sessions</p>
+                    </div>
+                    <div class="srvice3">
+                        <img src="Images/SVG/undraw_working_out_re_nhkg.svg" alt="image.active man">
+                        <p>Gym facilities</p>
+                    </div>
+                </div>
+                <div class="servicecato2">
+                    <div class="srvice4">
+                        <img src="Images/SVG/undraw_personal_trainer_re_cnua.svg" alt="image.active man">
+                        <p>personalized workout plans</p>
+                    </div>
+                    <div class="srvice5">
+                        <img src="Images/SVG/undraw_fitness_tracker_3033 (1).svg" alt="image.active man">
+                        <p> progress tracking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contact us-->
+
+    <section class="contactus" id="contactus">
+        <div class="Contact">
+            <h1 class="heading">Contact us</h1>
+            <div class="Contactcont">
+                <img src="Images/SVG/undraw_contact_us_re_4qqt.svg" alt="contactus-image">
+                <div class="textbox">
+                    <p>Any issues or questions? We're here to help! Don't hesitate to reach out. Your success is our priority.</p>
+                    <form action="form_handler.php" method="post" id="contactForm">
+                        <input type="text" id="fname" name="fname" placeholder="Name" required><br><br>
+                        <input type="email" id="Email" name="email" placeholder="Enter your e-mail" required><br><br>
+                        <textarea name="message" rows="10" cols="30" placeholder="Hello!"></textarea>
+                        <br><br>
+                        <div class="btn-container">
+                            <input type="submit" name="submit" id="submit-btn" class="btn">
+                        </div>
+                    </form>                    
+                  </div>
+            </div>
+        </div>
+    </section>
+
+   <!--footer-->
+
+   <footer>
+        <div class="footercont" id="footer">
+            <div class="section1">
+                <h1>GYM</h1>
+                <p>We care always and future today.</p><br>
+                <p>Phone:- <br> 0783224546</p><br>     
+                <p>
+                    Address:- <br>
+                    No 17/B, 2 nd Flore, <br>
+                    Main Street, Gall road, <br>
+                    Mount Lavania.
+                 </p>
+            </div>
+            <div class="section2">
+                <h1>Navigations</h1><br>
+               <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About-us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact-us</a></li>
+               </ul>
+            </div>
+            <div class="section3">
+                <h1>Important links</h1>
+                <br>
+                <a href="#">Gym</a><br><br>
+                <p>Follow us</p>
+                <br>
+               <ul>
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+               </ul>
+            </div>
+        </div>
+   </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-----JavaScript animation---->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu (){
+            navLinks.style.right = "0";
+        }
+
+        function hidemenu (){
+            navLinks.style.right = "-300px";
+        }
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+</body>
+</html>

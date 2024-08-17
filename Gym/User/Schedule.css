@@ -1,0 +1,90 @@
+.schedule {
+    display: grid;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 200px;
+    background-color: #273B4A;
+    padding: 90px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00000033;
+    width: auto;
+
+  }
+  
+  .day-time,
+  .night-time {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .day-time h2,
+  .night-time h2 {
+    color: #273B4A;
+    margin-bottom: 10px;
+  }
+  
+  .time-bar {
+    height: 50px;
+    background-color: #f0f0f0;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .time-block {
+    background-color: #29ff3e;
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: width 0.3s ease;
+  }
+  
+  .time-block::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #29ff3e;
+    transform: translateY(-50%);
+  }
+  
+  .time-block::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #29ff3e;
+    transform: translateY(-50%);
+  }
+  
+
+  button {
+    padding: 10px 20px;
+    background-color: 
+    #273B4A;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+  }
+  button:hover {
+    background-color: #1ac02b;
+  }
+  

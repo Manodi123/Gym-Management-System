@@ -1,0 +1,152 @@
+
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+content{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    width: calc(50% - 10px); /* Align two elements per row */
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button {
+    color:#007BFF;
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 50%;
+    margin-left:150px ;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+button:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.meal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.meal select,
+.meal input {
+    margin-bottom: 10px;
+    flex: 1 1 calc(25% - 10px); /* Distribute four elements per row */
+    box-sizing: border-box;
+}
+
+button[type="button"] {
+    color:#007BFF;
+    background-color: white;
+    margin-top: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button[type="button"]:hover {
+    color:#ffffff;
+    background-color: #007BFF;
+}
+
+#meals {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* New Styles for Layout */
+.form-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.form-section label,
+.form-section input,
+.form-section select {
+    width: 100%;
+}
+
+/* Additional Enhancements */
+
+
+h2 {
+    border-bottom: 2px solid #020202;
+    padding-bottom: 10px;
+}
+
+input, select {
+    background-color: #ffffff;
+}
+
+input[type="text"], input[type="date"], select {
+    padding: 12px;
+}
+
+button[type="submit"] {
+    color:#218838;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button[type="submit"]:hover {
+    color:#ffffff;
+    background-color: #218838;
+    
+}

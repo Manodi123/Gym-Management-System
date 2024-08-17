@@ -1,0 +1,51 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 40px;
+    width: 250px;
+    text-align: center;
+}
+
+
+
+.card h2 {
+    margin: 0;
+    color:white;
+    font-size: 20px;
+}
+
+.report-link {
+    display: block;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.report-link:hover {
+    background-color: #ddd;
+}
+
+
+
+.icon-yellow {
+    color:#FF6363;
+}
+

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chat</title>
+		<!-- Font awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" >
+		<!-- CSS -->
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="chat2.css">
+		<link rel="stylesheet" type="text/css" href="Dashboard2.css">
+
+	</head>
+	<body>
+
+            <!-- Side Bar-->
+    
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo"> 
+                <span>G Master</span> <!-- Added some text inside the logo for demonstration -->
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div class="User">
+            <img src="Images/portrait-white-man-isolated_53876-40306.avif" alt="me" class="user-img">
+            <div>
+                <p class="bold">Andrew</p>
+                <p class="bold">Welcome!</p>
+            </div>
+        </div>
+
+        <ul class="tooltip">
+            <li data-tooltip="">
+                <a href="Dashboard.php">
+                    <i class='bx bxs-dashboard'></i>      
+                    <span class="nav-item">Dashboard</span>
+                </a>
+                </li>
+                
+                <li data-tooltip="">
+                    <a href="todo list.html">
+                        <i class='bx bx-list-ul'></i>      
+                        <span class="nav-item">To-Do-List</span>
+                    </a>
+                    </li>
+                
+                    <li data-tooltip="">
+                        <a href="chat.html">
+                            <i class='bx bx-chat' ></i>      
+                            <span class="nav-item">Chat With Trainer</span>
+                        </a>
+                        </li>
+                
+                        <li data-tooltip="">
+                            <a href="#">
+                                <i class='bx bx-time-five' ></i>   
+                                <span class="nav-item">Time Schedule</span>
+                            </a>
+                            </li>
+                  
+                            <li data-tooltip="">
+                                <a href="Workoutplan.php">
+                                    <i class='bx bx-dumbbell' ></i>     
+                                    <span class="nav-item">Workout Plan</span>
+                                </a>
+                                </li>
+                
+                                <li data-tooltip="">
+                                    <a href="Mealplan.php">
+                                        <i class='bx bx-food-menu' ></i>     
+                                        <span class="nav-item">Meal Plan</span>
+                                    </a>
+                                    </li>
+                
+                                    <li data-tooltip="">
+                                        <a href="Appointment.html">
+                                            <i class='bx bx-timer' ></i>     
+                                            <span class="nav-item">Appointment</span>
+                                        </a>
+                                        </li>
+                
+                                        
+                                            <li data-tooltip="Progress">
+                                                <a href="#">
+                                                    <i class='bx bx-chart'></i>
+                                                <span class="nav-item">Progress</span>
+                                            </a>
+                                            </li>
+
+
+                                            <li data-tooltip="Subscription">
+                                                <a href="index.php">
+                                                <i class='bx bx-money-withdraw'></i>  
+                                                <span class="nav-item">Subscription</span>
+                                            </a>
+                                            </li>
+
+                                            <li data-tooltip="Feedback">
+                                                <a href="#">
+                                                    <i class='bx bx-message-alt-add'></i>
+                                                <span class="nav-item">Feedback</span>
+                                            </a>
+                                            </li>
+                
+                                            <li data-tooltip="User Profile">
+                                                <a href="index.html">
+                                                    <i class='bx bx-user-circle' ></i>
+                                                    <span class="nav-item">User Profile</span>
+                                                </a>
+                                                </li>
+                                                     
+                                                <li data-tooltip="Logout">
+                                                    <a href="login.php" id="logoutBtn">
+                                                        <i class='bx bx-log-out' ></i>
+                                                        <span class="nav-item">Logout</span>
+                                                    </a>
+                                                    </li>
+                                                         
+                                                     
+ </ul>
+</div>
+
+<div class="main-content">
+    <div class="main-content">
+        <div class="chat-container">
+            <div class="contact-list">
+                <div class="contact">
+                    <img src="Images\User_cicrle.png" alt="Contact 1">
+                    <span>Trainer 1</span>
+                    <span class="online-status"></span> <!-- Online status indicator -->
+                </div>
+            </div>
+            <div class="chat">
+                <div class="chat-header">
+                    <img src="Images\User_cicrle.png" alt="Trainer">
+                    <span>Trainer</span>
+                    <!-- Three dots icon -->
+                    <button class="options-icon"><i class='bx bx-dots-vertical'></i></button>
+                </div>
+                <div class="message-container" id="message-container">
+                    <!-- Messages will be displayed here -->
+                </div>
+                <div class="message-input">
+                    <!-- Input field for sender ID -->
+                    <input type="hidden" id="sender-id" value="1"> <!-- Assuming sender ID is fixed -->
+                
+                    <!-- Input field for recipient ID -->
+                    <input type="hidden" id="recipient-id" value="2"> <!-- Assuming recipient ID is fixed -->
+                    <button class="attachment-icon"><i class='bx bx-paperclip'></i></button>
+                    <textarea id="message-input" placeholder="Type your message..."></textarea>
+                    <button class="emoji-icon"><i class='bx bx-smile'></i></button>
+                    <button id="send-message" class="send-icon"><i class='bx bx-send'></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+
+<script>
+       
+       $(document).ready(function() {
+    // Function to send message to the server
+    $('#send-message').click(function() {
+        var senderId = $('#sender-id').val().trim();
+        var recipientId = $('#recipient-id').val().trim();
+        var message = $('#message-input').val().trim();
+        
+        if (message !== '') {
+            // AJAX request to send message to the server
+            $.ajax({
+                url: 'server.php?action=send',
+                type: 'POST',
+                dataType: 'json',
+                data: { sender_id: senderId, recipient_id: recipientId, message: message },
+                success: function(response) {
+                    console.log('Message sent:', response);
+                    // Optionally, you can update the UI here to show the sent message
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error sending message:', error);
+                }
+            });
+            // Clear the message input field after sending
+            $('#message-input').val('');
+        }
+    });
+
+    // Fetch messages from the server periodically
+    var lastMessageId = 0;
+    setInterval(function() {
+        $.ajax({
+            url: 'server.php?action=fetch',
+            type: 'GET',
+            dataType: 'json',
+            data: { last_message_id: lastMessageId },
+            success: function(response) {
+                response.forEach(function(message) {
+                    $('#message-container').append('<div class="message">' +
+                        '<span><strong>' + message.sender + ': </strong>' + message.message + '</span>' +
+                        '</div>');
+                    lastMessageId = message.id;
+                });
+                // Scroll to the bottom of the message container
+                $('#message-container').scrollTop($('#message-container')[0].scrollHeight);
+            },
+            error: function(xhr, status, error) {
+                console.error('Error fetching messages:', error);
+            }
+        });
+    }, 2000); // Fetch messages every 2 seconds
+});
+ </script>
+      
+      <script>
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.sidebar');
+
+        btn.onclick = function() {
+            sidebar.classList.toggle('active'); 
+        };
+        
+        
+    document.getElementById("logoutBtn").addEventListener("click", function() {
+        // Perform logout actions here, such as clearing session storage, redirecting to the login page, etc.
+        // For example, you can clear session storage:
+        sessionStorage.clear();
+        // Redirect to the login page
+        window.location.href = "login.html"; // Replace "login.html" with the actual URL of your login page
+    });
+
+
+
+
+       
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+	</body>
+</html>
+
